@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title> Hello </title>
+		<script type="text/javascript" src="socketio.js"></script>
+		<script type="text/javascript" src="physics.js"></script>
+		<style type="text/css">
+			.info {
+				font-size: 20px;
+				text-align: center
+			}
+			body {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+		</style>
+	</head>
+	<body>
+		<table width="40%" height="100%" style="position:absolute;top:0px;left:0px;display:none;" id="statsTable">
+			<tr>
+				<td align="left" valign="center" id="stats"></td>
+			</tr>
+		</table>
+		<table width="100%" height="100%">
+			<tr>
+				<td align="center" valign="middle">
+					<div id="join" style="display:block;">
+						<form id="form" action="javascript:void(0);">
+							Name: <input id="name" type="text" /><input type="submit" value="Join" />
+						</form>
+					</div>
+					<div id="game" style="display:none;">
+						<table id="table">
+							<tr>
+								<td id="kills" class="info"></td>
+								<td id="deaths" class="info"></td>
+								<td id="ammo" class="info"></td>
+							</tr>
+						</table>
+						<br>
+						<canvas id="canvas" style="border:1px solid black;"></canvas>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
